@@ -10,14 +10,14 @@ class Albums extends Component {
     }
 
     render() {
-
+        
         return (
             <div>
                 <h1> My Favorite Albums</h1>
 
                 {
-                    albumList.map((album) => {
-                        return <h3>{this.props.album}</h3>
+                    this.props.albumList.map((album) => {
+                        return <h3>{album}</h3>
                     })
                 }
 

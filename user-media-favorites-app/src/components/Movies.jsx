@@ -11,12 +11,13 @@ class Movies extends Component {
     }
 
     render() {
+        
         return (
             <div>
                 <h1>My Favorite Movies:</h1>
                 {
-                    movieList.map((movie) => {
-                        return <h3>{this.props.movie}</h3>
+                    this.props.movieList.map((movie) => {
+                        return <h3>{movie}</h3>
                     })
                 }
                

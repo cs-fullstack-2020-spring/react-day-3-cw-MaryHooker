@@ -30,11 +30,10 @@ class Favorites extends Component {
         // console.log(albumArray);
          
         return (
-            <div>
-                <h1> This is a list of your favorite movies and albums</h1>
-                <Movies movieList={movieArray} />
-                <Albums albumList={albumArray} />
-
+            <div className='container'>
+                <h1 className='header'> This is a list of your favorite movies and albums</h1>
+                <Movies movieList={movieArray} className='moviess'/>
+                <Albums albumList={albumArray} className='albumss'/>
             </div>
         )
     }
