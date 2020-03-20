@@ -11,13 +11,15 @@ class Movies extends Component {
     }
     render() {
         return (
+            // iterate through the movies array
             <div>
+                <h1>Movies</h1>
                 {
                     this.props.movieArray.map((movie,index) =>{
                         return(
                             <div key={index}>
-                                <h3>favorite movie: {movie.favMov}</h3>
-                                <h3>second favorite: {movie.secMov}</h3>
+                                <h3>{movie}</h3>
+                                
                             </div>
                         )
                     }

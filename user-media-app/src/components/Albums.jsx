@@ -12,13 +12,14 @@ class Albums extends Component {
 
     render() {
         return (
+            //iterate through the albums array
             <div>
+                <h1>Albums</h1>
                   {
                     this.props.albumArray.map((album,index) =>{
                         return(
                             <div key={index}>
-                                <h3>favorite album: {album.favAlb}</h3>
-                                <h3>second favorite: {album.secAlb}</h3>
+                                <h3>{album}</h3> 
                             </div>
                         )
                     }
