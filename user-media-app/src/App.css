@@ -1,0 +1,13 @@
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.movies{
+  grid-column: 1;
+}
+
+.albums{
+  grid-column: 2;
+}
